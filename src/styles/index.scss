@@ -1,7 +1,6 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
 /* 
-
     You can write your own styles here...
     
     
@@ -9,5 +8,81 @@
     other sylesheets into your bunde as well, e.j:
     
     import 'relative/path/to/stylesheet.scss';
-
 */
+
+body {
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div#app {
+    height: 100%;
+}
+
+h1 {
+    color: hsl(184, 55%, 38%);
+}
+
+form {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+
+}
+
+ul {
+
+    width: 100%;
+
+    border: 1px solid rgba(0,0,0,0.15);
+
+    box-shadow:
+    /* The top layer shadow */
+    0 1px 1px rgba(0,0,0,0.15),
+    /* The second layer */
+    0 10px 0 -5px #eee,
+    /* The second layer shadow */
+    0 10px 1px -4px rgba(0,0,0,0.15),
+     /* The third layer */
+    0 20px 0 -10px #eee,
+    /* The third layer shadow */
+    0 20px 1px -9px rgba(0,0,0,0.15);
+    /* Padding for demo purposes */
+    padding: 30px;
+}
+
+button {
+    background: transparent;
+}
+
+input.form-control, button {
+    border: none;
+}
+
+li {
+    padding: 10px;
+}
+
+li.listItem {
+    cursor: pointer;
+    transition: ease 0.3s;
+}
+
+li:not(:last-of-type) {
+   border-bottom: 1px solid rgba(0,0,0,0.15);
+}
+
+li.listItem:hover {
+    background-color: hsl(184, 55%, 38%);
+    color: #fff;
+    font-weight: bold;
+}
+
+span#number {
+    font-weight: bold;
+    color: hsl(183, 54%, 63%);
+}
+
+.icon {
+    color: #fff;
+}
